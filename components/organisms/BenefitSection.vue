@@ -1,5 +1,9 @@
 <template>
-  <SectionTitle pretitle="Beerly Benefits" title="Why should you use Beerly">
+  <SectionTitle
+    id="features"
+    pretitle="Beerly Benefits"
+    title="Why should you use Beerly"
+  >
     Beerly allows you to search through collection best sorted Beers with the
     right ingredients.
   </SectionTitle>

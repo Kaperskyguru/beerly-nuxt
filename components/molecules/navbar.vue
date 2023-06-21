@@ -49,7 +49,13 @@
           <div class="flex flex-wrap w-full my-5 lg:hidden">
             <nuxt-link
               v-for="(item, i) in navigation"
-              :to="item == 'Beers' ? '/beers' : '/'"
+              :to="
+                item == 'Beers'
+                  ? '/beers'
+                  : item == 'Features'
+                  ? '/#features'
+                  : '/'
+              "
               :key="i"
               class="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
             >
@@ -72,7 +78,13 @@
         >
           <li class="mr-3 nav__item" v-for="(menu, i) in navigation" :key="i">
             <nuxt-link
-              :to="menu == 'Beers' ? '/beers' : '/'"
+              :to="
+                menu == 'Beers'
+                  ? '/beers'
+                  : menu == 'Features'
+                  ? '/#features'
+                  : '/'
+              "
               class="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
             >
               {{ menu }}
@@ -83,7 +95,7 @@
 
       <div class="hidden mr-3 space-x-4 lg:flex nav__item">
         <nuxt-link
-          to="/foods"
+          to="/beers"
           class="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5"
         >
           Get Started
@@ -94,7 +106,7 @@
 </template>
   
   <script setup>
-const navigation = ["Features", "Beers", "Pricing", "Blog"];
+const navigation = ["Features", "Beers"];
 </script>
   
   <style>
