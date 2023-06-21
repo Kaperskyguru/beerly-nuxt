@@ -25,9 +25,9 @@
           </div>
 
           <div class="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-            Beerly is a free landing page & marketing website template for
-            startups and indie projects. Its built with Next.js & TailwindCSS.
-            And its completely open-source.
+            Check through your favorite beer and see the ingredients its made
+            of, search through a collection of best Beer with the right
+            combination of ingredients.
           </div>
         </div>
 
