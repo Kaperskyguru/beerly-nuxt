@@ -26,7 +26,7 @@
               Search Now
             </nuxt-link>
             <a
-              href="https://github.com/kaperskyguru/Beerly-nuxt/"
+              href="https://github.com/kaperskyguru/beerly-nuxt/"
               target="_blank"
               rel="noopener"
               class="flex items-center space-x-2 text-gray-500 dark:text-gray-400"
